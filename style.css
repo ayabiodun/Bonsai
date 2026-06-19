@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', 'inter';
+    background-color: #F2F5F8;
+    width: 100%;
+}
+/*  HEADING STYLING   */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-left: 70px;
+    font-size: 1.4rem;
+    font-family: 'inter';
+    color: #00b289;
+    cursor: pointer;
+}
+
+.navbar  {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    margin-right: 30px;
+}
+
+.navbar li a {
+    color: #4c4d5f;
+    font-size: 14px;
+    border-bottom: 1px transparent;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover {
+    border-bottom:1px solid #00b289;
+    font-size: 15px;
+}
+
+.btn1 {
+    border: 1px solid #00b289;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #00b289;
+    padding:  10px 20px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: #00b289;
+    color: #fff;
+}
+
+.btn2 {
+    background-color: #00b289;
+    color: #fff;
+    padding: 14px 28px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn2:hover {
+    background-color: #009c78;
+}
+
+/* HEAD OF BODY */
+
+.pricing {
+    display: flex;
+    margin-top: 150px;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #4c4d5f;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-round {
+  background-color: #00b289;
+}
+
+input:focus + .slider-round {
+  box-shadow: 0 0 1px #00b289;
+}
+
+input:checked + .slider-round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-round {
+  border-radius: 34px;
+}
+
+.slider-round:before {
+  border-radius: 50%;
+}
+
+
+.toggle {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    align-items: center;
+}
+
+/* CARD STYLING */
+
+.pricing h2 {
+    font-size: 35px;
+}
+
+.card-1 {
+    width: 31%;
+    height: 950px;
+    margin: 70px 0 0 30px;
+    padding: 35px;
+    color: #4c4d5f;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card-1 h3 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.card-1 p {
+    font-size: 13px;
+}
+
+.card-1 span{
+    font-size: 70px;
+}
+
+.card-1 sub {
+    font-weight: 500;
+}
+
+.head {
+    border-bottom: 2px solid #00b289;
+}
+
+.list ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.freebtn {
+    display: block;
+    margin: 270px auto 0 auto ;
+    padding: 20px 80px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #00b289;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.freebtn:hover {
+    background-color: #009c78;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.freebtn2 {
+    display: block;
+    margin: 234px auto 0 auto ;
+    padding: 20px 80px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #00b289;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.freebtn2:hover {
+    background-color: #009c78;
+}
+
+.freebtn3 {
+    display: block;
+    margin: 79px auto 0 auto ;
+    padding: 20px 80px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #00b289;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.freebtn3:hover {
+    background-color: #009c78;
+}
+
+.sub-head {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    color: #4c4d5f;
+    font-weight: 400;
+}
+
+.free {
+    background-color: #ffffff;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: #4c4d5f;
+    margin: 5px 30px 10px 30px;
+    border-radius: 5px;
+}
+
+.free a {
+    color: #00b289;
+    transition: 0.3s ease;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.free a:hover {
+    font-size: 14px;
+    gap: 8px;
+}
+
+.box {
+    display: flex;
+    margin: 50px 40px;
+    background-color: #def1ff;
+    padding: 80px 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: #4c4d5f;
+    border-radius: 8px;
+}
+
+.box button {
+    background-color: #00b289;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 26px;
+    border-radius: 5px;
+}
+
+.questions h2 {
+    text-align: center;
+    margin: 60px 0;
+    color: #00b289;
+    font-size: 32px;
+}
+
+.questions div {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 200px auto;
+}
+
+.questions summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4c4d5f;
+}
+
+.questions summary:hover {
+    color: #00b289;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    color: #4c4d5f;
+    margin-bottom: 15px;
+}
+
+.footer-column .sub-heading {
+    margin-top: 30px;
+}
+
+.footer-column a {
+    font-size: 14px;
+    color: #4c4d5f; 
+}
+
+.footer-column a:hover {
+    color: #00b289;
+}
